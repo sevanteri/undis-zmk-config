@@ -79,9 +79,9 @@
 // | ---  | --- | F2  | F3   | F5   | excel|   ---   |  ---    |  |   ---   |  ---    |      | Predk| ---   | NxDk |   -  |---   |
 //                    | ---  | ---  | ---  |   ---   |  ---    |  |   ---   |   0     |  $   | ---  | ---   |
 			bindings = <
-	&trans &kp PTAB &kp NTAB  &kp PWIN &kp NWIN  &trans                                &kp none  &kp HOME &kp none &kp END   &kp PG_UP &trans
-	&trans &kp LGUI &kp LSHFT &kp LALT &kp LCTRL &kp K_APP                             &kp LEFT  &kp DOWN &kp UP   &kp RIGHT &kp PG_DN &trans
-	&trans &trans   &kp F2    &kp F3   &kp F5    &kp XSLV &trans &trans  &trans &trans &trans   &kp NDESK &trans   &kp PDESK &trans &trans
+	&trans &kp PTAB &kp NTAB  &kp PWIN &kp NWIN  &trans                                &none     &kp HOME  &none    &kp END   &kp PG_UP &trans
+	&trans &kp LGUI &kp LSHFT &kp LALT &kp LCTRL &kp K_APP                             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp PG_DN &trans
+	&trans &trans   &kp F2    &kp F3   &kp F5    &kp XSLV &trans &trans  &trans &trans &trans    &kp NDESK &trans   &kp PDESK &trans &trans
 	                       &trans  &trans   &trans        &trans &trans  &trans &kp N0    &kp FI_DLR &none     &trans
 			>;
 
