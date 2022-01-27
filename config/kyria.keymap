@@ -14,6 +14,14 @@
 #define NUM  2
 #define NAV  3
 
+#define PTAB LC(PG_UP)
+#define NTAB LC(PG_DN)
+#define NWIN LA(TAB)
+#define PWIN LS(LA(TAB))
+#define XSLV LA(LC(V))
+#define PDESK LC(LG(RIGHT))
+#define NDESK LC(LG(LEFT))
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
