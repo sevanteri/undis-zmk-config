@@ -31,13 +31,13 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | TAB/FN|  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   | bksp |
 // | ESC   |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   Ö   |  Ä   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | ---     |  ---    |  |   ctrl  |  blank  |  N   |  M    |  ,    |  .   |   -   |shft/"|
-//                     | LGUI |Alt/En| Ctrl |Nav/ent  |  ctrl   |  |   bksp  |  num    | spc  | ---   | del   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | ---     |  ---    |  |    ---  |    ---  |  N   |  M    |  ,    |  .   |   -   |enter |
+//                     | LGUI |Alt/En| Ctrl |    ent  |  ctrl   |  |   nav   |  spc    | num  |  /    | del   |
 			bindings = <
 	&lt FNC TAB &kp Q       &kp W &kp E &kp R &kp T                                            &kp Y &kp U  &kp I     &kp O   &kp P         &kp BSPC
 	&kp ESC     &kp A       &kp S &kp D &kp F &kp G                                            &kp H &kp J  &kp K     &kp L   &kp FI_ODIA   &kp FI_ADIA
-	&kp LSHFT   &kp Z       &kp X &kp C &kp V &kp B &none   &none             &kp RCTRL &none  &kp N &kp M  &kp COMMA &kp DOT &kp FI_MINS   &mt RSHFT LS(N2)
-	              &kp LGUI  &mt LALT RET  &kp LCTRL &lt NAV RET &kp LCTRL          &kp BKSP &mo NUM &kp SPC &none &kp DEL 
+	&kp LSHFT   &kp Z       &kp X &kp C &kp V &kp B &none   &none                &none  &none  &kp N &kp M  &kp COMMA &kp DOT &kp FI_MINS   &kp RET         
+	              &kp LGUI  &mt LALT RET  &kp LCTRL &kp RET  &kp LCTRL            &mo NAV  &kp SPC &mo NUM &kp KP_DIVIDE &kp DEL 
 			>;
 
 		};
@@ -59,15 +59,15 @@
 
 		num_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | ½     |  !  |  +  |  [   |  ]   |  =   |                                          |  %   |  7    |  8    |  9   |   *   | /    |
-// | #     |  @  |  _  |  (   |  )   |  -   |                                          |  $   |  4    |  5    |  6   |   +   | ---  |
-// | ~     |  \  |  &  |  {   |  }   |  |   |   ---   |  ---    |  |   ---   |  ---    |  ^   |  1    |  2    |  3   |   -   | ---  |
-//                     | ---  | ---  | ---  |   ---   |  ---    |  |   ---   |  ---    |  0   |  .    | ---   |
+// | ½     |  !  |  "  |  [   |  ]   |  =   |                                          |  %   |  7    |  8    |  9   |   *   | ?    |
+// | #     |  @  |  _  |  (   |  )   |  -   |                                          |  $   |  4    |  5    |  6   |   +   |  '   |
+// | ~     |  \  |  &  |  {   |  }   |  |   |   ---   |  ---    |  |   ---   |  ---    |  ^   |  1    |  2    |  3   |   _   | ---  |
+//                     | ---  | ---  | ---  |    0    |   $     |  |   ---   |  ---    |  0   |  .    | ---   |
 			bindings = <
-	&kp FI_HALF &kp FI_EXLM &kp FI_PLUS &kp FI_LBRC &kp FI_RBRC &kp FI_EQL                                  &kp FI_PERC &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp KP_DIVIDE
-	&kp FI_HASH &kp FI_AT   &kp FI_UNDS &kp FI_LPRN &kp FI_RPRN &kp FI_MINS                                 &kp FI_DLR  &kp N4 &kp N5 &kp N6 &kp KP_PLUS     &none
-	&kp FI_TILD &kp FI_BSLS &kp FI_AMPR &kp FI_LCBR &kp FI_RCBR &kp FI_PIPE &trans &trans     &trans &trans &kp FI_CIRC &kp N1 &kp N2 &kp N3 &kp KP_MINUS    &trans
-	                       &trans  &trans   &trans          &trans &trans                       &trans &trans    &kp N0  &kp DOT    &trans
+	&kp FI_HALF &kp FI_EXLM &kp FI_DQUO &kp FI_LBRC &kp FI_RBRC &kp FI_EQL                                  &kp FI_PERC &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp FI_QUES
+	&kp FI_HASH &kp FI_AT   &kp FI_UNDS &kp FI_LPRN &kp FI_RPRN &kp FI_MINS                                 &kp FI_DLR  &kp N4 &kp N5 &kp N6 &kp KP_PLUS     &kp FI_QUOT
+	&kp FI_TILD &kp FI_BSLS &kp FI_AMPR &kp FI_LCBR &kp FI_RCBR &kp FI_PIPE &trans &trans     &trans &trans &kp FI_CIRC &kp N1 &kp N2 &kp N3 &kp FI_UNDS     &trans
+	                       &trans  &trans   &trans          &kp N0   &kp FI_DLR                   &trans &trans    &kp N0  &kp DOT    &trans
 			>;
 
 		};
