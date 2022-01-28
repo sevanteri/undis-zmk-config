@@ -43,11 +43,11 @@
 		};
 
 		parenthesis_layer{
-// ---------------------------------------------------------------------------------------------------------------------------------
-// | none  | --- | --- |  [   |  ]   | ---  |                                       |  /   |  <    |  >    |   \  | ---  | ---  |
-// | none  | --- | --- |  (   |  )   | ---  |                                       | ---  |  0    |  $    |  --- | ---  | ---  |
-// | none  | --- | --- |  {   |  }   | ---  |  ---   |  ---    |  |   ---   |  ---  | ---  |  -    |  +    |  --- | ---  | ---  |
-//                     | ---  | ---  | ---  |  ---   |  ---    |  |   ---   |  ---  | ---  | ---   | ---   |
+        // ---------------------------------------------------------------------------------------------------------------------------------
+        // | none  | --- | --- |  [   |  ]   | ---  |                                       |  /   |  <    |  >    |   \  | ---  | ---  |
+        // | none  | --- | --- |  (   |  )   | ---  |                                       | ---  |  0    |  $    |  --- | ---  | ---  |
+        // | none  | --- | --- |  {   |  }   | ---  |  ---   |  ---    |  |   ---   |  ---  | ---  |  -    |  +    |  --- | ---  | ---  |
+        //                     | ---  | ---  | ---  |  ---   |  ---    |  |   ---   |  ---  | ---  | ---   | ---   |
 			bindings = <
 	&trans &none &none &kp FI_LBRC &kp FI_RBRC &none                                     &kp FI_SLSH &kp FI_LABK &kp FI_RABK &kp FI_BSLS &none &none 
 	&trans &none &none &kp FI_LPRN &kp FI_RPRN &none                                     &none       &kp N0      &kp FI_DLR  &none       &none &none 
@@ -58,26 +58,26 @@
 		};
 
 		num_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// | ½     |  !  |  "  |  [   |  ]   |  =   |                                          |  %   |  7    |  8    |  9   |   *   | ?    |
-// | #     |  @  |  _  |  (   |  )   |  -   |                                          |  $   |  4    |  5    |  6   |   +   |  '   |
-// | ~     |  \  |  &  |  {   |  }   |  |   |   ---   |  ---    |  |   ---   |  ---    |  ^   |  1    |  2    |  3   |   _   | ---  |
-//                     | ---  | ---  | ---  |    0    |   $     |  |   ---   |  ---    |  0   |  .    | ---   |
+        // ---------------------------------------------------------------------------------------------------------------------------------
+        // | ---   |  !  |  "  |  @   |  #   |  %   |                                          |  $   |  &    |  ---  |   =  |   ?   | ---  |
+        // | ---   |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |  *   |
+        // | ~     | --- | --- | ---  | ---  |  |   |   ---   |  ---    |  |   ---   |  ---    |  ^   |  ---  |  ---  | ---  | ---   |  '   |
+        //                     | ---  | ---  | ---  |   ---   |  ---    |  |   ---   |  ---    | ---  |  ---  | ---   |
 			bindings = <
-	&kp FI_HALF &kp FI_EXLM &kp FI_DQUO &kp FI_LBRC &kp FI_RBRC &kp FI_EQL                                  &kp FI_PERC &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp FI_QUES
-	&kp FI_HASH &kp FI_AT   &kp FI_UNDS &kp FI_LPRN &kp FI_RPRN &kp FI_MINS                                 &kp FI_DLR  &kp N4 &kp N5 &kp N6 &kp KP_PLUS     &kp FI_QUOT
-	&kp FI_TILD &kp FI_BSLS &kp FI_AMPR &kp FI_LCBR &kp FI_RCBR &kp FI_PIPE &trans &trans     &trans &trans &kp FI_CIRC &kp N1 &kp N2 &kp N3 &kp FI_UNDS     &trans
-	                       &trans  &trans   &trans          &kp N0   &kp FI_DLR                   &trans &trans    &kp N0  &kp DOT    &trans
+	&none       &kp FI_EXLM &kp FI_DQUO &kp FI_AT &kp FI_HASH &kp FI_PERC                                 &kp FI_DLR  &kp FI_AMPR &none  &kp FI_EQL &kp FI_QUES &none
+	&none       &kp N1      &kp N2      &kp N3    &kp N4      &kp N5                                      &kp N6      &kp N7      &kp N8 &kp N9     &kp N0      &kp KP_MULTIPLY
+	&kp FI_TILD &none       &none       &none     &none       &kp FI_PIPE &trans &trans     &trans &trans &kp FI_CIRC &none       &none  &none      &none       &kp FI_QUOT
+	                                      &trans  &trans   &trans    &none    &none                 &trans &trans    &none   &none      &trans
 			>;
 
 		};
 
 		nav_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// | ---  | Tab-| Tab+| win+ | win- | excel|                                          |      | Home | ---   | End  | Pgup | ---  |
-// | ---  | Win | Shft| alt  | ctrl | app  |                                          | Left | Down |  Up   | Right| Pgdw | ---  |
-// | ---  | --- | F2  | F3   | F5   | excel|   ---   |  ---    |  |   ---   |  ---    |      | Predk| ---   | NxDk |   -  |---   |
-//                    | ---  | ---  | ---  |   ---   |  ---    |  |   ---   |   0     |  $   | ---  | ---   |
+        // ---------------------------------------------------------------------------------------------------------------------------------
+        // | ---  | Tab-| Tab+| win+ | win- | excel|                                          |      | Home | ---   | End  | Pgup | ---  |
+        // | ---  | Win | Shft| alt  | ctrl | app  |                                          | Left | Down |  Up   | Right| Pgdw | ---  |
+        // | ---  | --- | F2  | F3   | F5   | excel|   ---   |  ---    |  |   ---   |  ---    |      | Predk| ---   | NxDk |   -  |---   |
+        //                    | ---  | ---  | ---  |   ---   |  ---    |  |   ---   |   0     |  $   | ---  | ---   |
 			bindings = <
 	&trans &kp PTAB &kp NTAB  &kp PWIN &kp NWIN  &trans                                &none     &kp HOME  &none    &kp END   &kp PG_UP &trans
 	&trans &kp LGUI &kp LSHFT &kp LALT &kp LCTRL &kp K_APP                             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp PG_DN &trans
