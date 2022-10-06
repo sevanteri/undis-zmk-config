@@ -51,7 +51,7 @@
 			bindings = <
 	&trans &none &kp FI_DQUO &kp FI_LBRC &kp FI_RBRC &none                                &kp FI_SLSH &kp FI_LABK &kp FI_RABK &kp FI_BSLS &none &none 
 	&trans &none &none       &kp FI_LPRN &kp FI_RPRN &none                                &none       &kp N0      &kp FI_DLR  &none       &none &none 
-	&trans &none &none       &kp FI_LCBR &kp FI_RCBR &none  &none &none      &none  &none &none       &kp FI_MINS &kp KP_PLUS &none       &none &none 
+	&trans &none &none       &kp FI_LCBR &kp FI_RCBR &none  &none &none      &none  &none &none       &kp FI_MINS &kp FI_PLUS &none       &none &none 
 	                         &trans  &trans  &trans  &trans &trans        &trans &trans &trans &trans &trans
 			>;
 
@@ -65,7 +65,7 @@
         //                     | ---  | ---  | ---  |   ---   |  ---    |  |   ---   |  ---    | ---  |  ---  | ---   |
 			bindings = <
 	&none       &kp FI_EXLM &kp FI_DQUO &kp FI_AT &kp FI_HASH &kp FI_PERC                               &kp FI_DLR  &kp FI_AMPR &none  &kp FI_EQL &kp FI_QUES &none
-	&none       &kp N1      &kp N2      &kp N3    &kp N4      &kp N5                                    &kp N6      &kp N7      &kp N8 &kp N9     &kp N0      &kp KP_MULTIPLY
+	&none       &kp N1      &kp N2      &kp N3    &kp N4      &kp N5                                    &kp N6      &kp N7      &kp N8 &kp N9     &kp N0      &kp STAR
 	&kp FI_TILD &none       &none       &none     &none       &kp FI_PIPE &trans &trans   &trans &trans &kp FI_CIRC &none       &none  &none      &none       &kp FI_QUOT
 	                                      &trans  &trans   &trans    &none    &none               &trans &trans    &none   &none      &trans
 			>;
