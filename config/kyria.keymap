@@ -59,12 +59,12 @@
 
 		num_layer {
         // ---------------------------------------------------------------------------------------------------------------------------------
-        // | ---   |  !  |  "  |  @   |  #   |  %   |                                          |  $   |  &    |  ---  |   =  |   ?   | ---  |
+        // | ---   |  !  |  "  |  @   |  #   |  %   |                                          |  $   |  &    |  ---  |   =  |   ?   | del  |
         // | ---   |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |  *   |
         // | ~     | --- | --- | ---  | ---  |  |   |   ---   |  ---    |  |   ---   |  ---    |  ^   |  ---  |  ---  | ---  | ---   |  '   |
         //                     | ---  | ---  | ---  |   ---   |  ---    |  |   ---   |  ---    | ---  |  ---  | ---   |
 			bindings = <
-	&none       &kp FI_EXLM &kp FI_DQUO &kp FI_AT &kp FI_HASH &kp FI_PERC                               &kp FI_DLR  &kp FI_AMPR &none  &kp FI_EQL &kp FI_QUES &none
+	&none       &kp FI_EXLM &kp FI_DQUO &kp FI_AT &kp FI_HASH &kp FI_PERC                               &kp FI_DLR  &kp FI_AMPR &none  &kp FI_EQL &kp FI_QUES &kp DEL
 	&none       &kp N1      &kp N2      &kp N3    &kp N4      &kp N5                                    &kp N6      &kp N7      &kp N8 &kp N9     &kp N0      &kp FI_ASTR
 	&kp FI_TILD &none       &none       &none     &none       &kp FI_PIPE &trans &trans   &trans &trans &kp FI_CIRC &none       &none  &none      &none       &kp FI_QUOT
 	                                      &trans  &trans   &trans    &none    &none               &trans &trans    &none   &none      &trans
