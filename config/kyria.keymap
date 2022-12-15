@@ -76,13 +76,13 @@
         // ---------------------------------------------------------------------------------------------------------------------------------
         // | ---  | Tab-| Tab+| win+ | win- | excel|                                          |      | Home | ---   | End  | Pgup | ---  |
         // | ---  | Win | Shft| alt  | ctrl | app  |                                          | Left | Down |  Up   | Right| Pgdw | ---  |
-        // | ---  | --- | F2  | F3   | F5   | excel|   ---   |  ---    |  |   ---   |  ---    |      | Predk| ---   | NxDk |   -  |---   |
-        //                    | ---  | ---  | ---  |   ---   |  ---    |  |   ---   |   0     |  $   | ---  | ---   |
+        // | ---  | F1  | F2  | F3   | F4   | F5   |   win   |  Shift  |  |   ---   |  ---    | F6   | F7   |  F8   | F9   |  F10 | F11  |
+        //                    | ---  | ---  | ---  |   Ctrl  |  Win    |  |   ---   |   0     |  $   | ---  | ---   |
 			bindings = <
 	&trans &kp PTAB &kp NTAB  &kp PWIN &kp NWIN  &trans                                &none     &kp HOME  &none    &kp END   &kp PG_UP &trans
 	&trans &kp LGUI &kp LSHFT &kp LALT &kp LCTRL &kp K_APP                             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp PG_DN &trans
-	&trans &trans   &kp F2    &kp F3   &kp F5    &kp XSLV &trans &trans  &trans &trans &trans    &kp NDESK &trans   &kp PDESK &trans &trans
-	                       &trans  &trans   &trans        &trans &trans  &trans &kp N0    &kp FI_DLR &none     &trans
+	&trans &kpF1   &kp F2    &kp F3   &kp F4    &kp F5 &kp LGUI &kp LSHFT  &trans &trans    &kp F6    &kp F7    &kp F8   &kp F9    &kp F10   &kp F11
+	                       &trans  &trans   &trans    &kp LCTRL &kp LGUI      &trans &kp N0    &kp FI_DLR &none     &trans
 			>;
 
 		};
